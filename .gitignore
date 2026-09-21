@@ -13,6 +13,9 @@ dist-ssr/
 .env.development.local
 .env.test.local
 .env.production.local
+*.pem
+*.key
+credentials.json
 
 # Logs
 npm-debug.log*
@@ -20,16 +23,30 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
+# OS files
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+desktop.ini
+
 # Editor directories
 .idea/
-.vscode/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
-.DS_Store
 
-# Temporary scratch files
+# Temporary scratch & AI files
 scratch/
+temp/
+tmp/
 *.tmp
+.aiexclude
+.agents/scratch/
+.gemini/antigravity/brain/
